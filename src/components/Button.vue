@@ -4,14 +4,11 @@ button.flex.flex-row.px-4.py-2.rounded-lg
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { defineComponent } from 'vue';
 
-@Options({
+export default defineComponent({
   name: 'boomba-button',
-})
-export default class BoombaButton extends Vue {
-
-}
+});
 </script>
 
 <style scoped>
