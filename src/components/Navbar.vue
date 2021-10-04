@@ -10,18 +10,15 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { defineComponent } from 'vue';
 import BoombaButton from './Button.vue';
 
-@Options({
+export default defineComponent({
   name: 'boomba-navbar',
   components: {
     BoombaButton,
   },
-})
-export default class BoombaNavbar extends Vue {
-
-}
+});
 </script>
 
 <style lang="scss" scoped>
